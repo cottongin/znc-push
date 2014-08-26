@@ -280,10 +280,10 @@ class CPushMod : public CModule
 				// BASIC auth, base64-encoded APIKey:
 				service_auth = options["secret"] + CString(":");
 
-				if (options["target"] != "")
-				{
-					params["device_iden"] = options["target"];
-				}
+				//if (options["target"] != "")
+				//{
+				//	params["device_iden"] = options["target"];
+				//}
 
 				params["type"] = "note";
 				params["title"] = message_title;
